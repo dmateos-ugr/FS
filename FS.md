@@ -12,11 +12,11 @@ Los números enteros suelen ocupar una palabra, 4 bytes en ordenadores de 32 bit
 ### Palabras
 Una palabra es la unidad minima de informacion que un determinado procesador puede leer o escribir.
 ### Niveles de lenguaje
-- **El lenguaje máquina** es el lenguaje que entiende el ordenador, ya que fue diseñado para eso. El repertorio máquina es el conjunto de órdenes que entiende un ordenador. Cada orden que le llega al procesador tiene una 'llave', llamada código de operación, que identifica el tipo de orden, de manera que el procesador haga una cosa u otra dependiendo de esta llave. Este código de operación viene acompañado con uno o varios operandos
+- **El lenguaje máquina** es el lenguaje que entiende el ordenador, ya que fue diseñado para eso. El repertorio máquina es el conjunto de órdenes que entiende un ordenador. Cada orden que le llega al procesador tiene una 'llave', llamada código de operación, que identifica el tipo de orden, de manera que el procesador haga una cosa u otra dependiendo de esta llave. Este código de operación viene acompañado con uno o varios operandos, que suelen ser las direcciones en memoria de los datos que se van a usar en la orden.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY4NTIzMjQsMTA4NzA2MTk5MywxNT
-A3NzU5MTk1XX0=
+eyJoaXN0b3J5IjpbMTY5MTMxNTM1OCwxMDg3MDYxOTkzLDE1MD
+c3NTkxOTVdfQ==
 -->
