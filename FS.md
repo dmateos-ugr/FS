@@ -11,13 +11,12 @@ Estas excepciones se deben a que el tamaño del exponente es demasiado grande, y
 Los números enteros suelen ocupar una palabra, 4 bytes en ordenadores de 32 bits. El primer bit indica el signo del número (positivo o negativo), y los demás indican la cantidad. Además, los número negativos se almacenan complementados, de manera que no haya falta definir la resta: 4 - 2 = 4 + complementado(2) en binario..
 ### Palabras
 Una palabra es la unidad minima de informacion que un determinado procesador puede leer o escribir.
-###
-El lenguaje máquina es el lenguaje que entiende el ordenador. Es el único lenguaje que entiende, ya que fue diseñado para eso. El repertorio máquina es el conjunto de órdenes que entiende un ordenador. Cada orden que le llega al procesador tiene una 'llave', llamada código de operación, que identifica el tipo de orden, de manera que el procesador haga una cosa u otra dependiendo de esta llave.
-### Niveles de lenguaaje
+### Niveles de lenguaje
+- **El lenguaje máquina** es el lenguaje que entiende el ordenador, ya que fue diseñado para eso. El repertorio máquina es el conjunto de órdenes que entiende un ordenador. Cada orden que le llega al procesador tiene una 'llave', llamada código de operación, que identifica el tipo de orden, de manera que el procesador haga una cosa u otra dependiendo de esta llave. Este código de operación viene acompañado con uno o varios operandos
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjIwODE1MTUsMTA4NzA2MTk5MywxNT
+eyJoaXN0b3J5IjpbLTEyMjY4NTIzMjQsMTA4NzA2MTk5MywxNT
 A3NzU5MTk1XX0=
 -->
