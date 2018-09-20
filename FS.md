@@ -11,9 +11,9 @@ Los números enteros suelen ocupar una palabra, 4 bytes en ordenadores de 32 bit
 ### Palabras
 Una palabra es la unidad minima de informacion que un determinado procesador puede leer o escribir.
 ### Datos
-El lenguaje máquina es el 
+El lenguaje máquina es el lenguaje que entiende el ordenador. Es el único lenguaje que entiende, ya que fue diseñado para eso. El repertorio máquina es el conjunto de órdenes que entiende un ordenador. Cada orden que le llega al procesador tiene una 'llave' que identifica el tt
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NTM0NTQ1NiwxNTA3NzU5MTk1XX0=
+eyJoaXN0b3J5IjpbLTEyNDI3MDU2MzMsMTUwNzc1OTE5NV19
 -->
