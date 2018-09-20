@@ -5,6 +5,7 @@ Un byte está formado por ocho bits debido a que ocho bits (dos dígitos hexadec
 
 ## Tipos de datos
 Los tipos de datos son (G, O, P), haciendo referencia al género del dato (ej: numeros enteros hasta 2¹⁶), las operaciones (ej: suma, resta), y las propiedades. Cuando un dato demasiado grande se intenta almacenar, ocurre un desbordamiento de memoria (*overflow*). También puede ocurrir lo contrario: que el número sea demasiado chico y no se pueda almacenar (*underflow*). Ej: 2 · 10⁻¹²³⁴⁵.
+Estas excepciones se deben a que el tamaño del exponente es demasiado grande, ya sea positivo o negativo.
 
 ### Enteros
 Los números enteros suelen ocupar una palabra, 4 bytes en ordenadores de 32 bits. El primer bit indica el signo del número (positivo o negativo), y los demás indican la cantidad.
@@ -15,5 +16,5 @@ El lenguaje máquina es el lenguaje que entiende el ordenador. Es el único leng
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNzg3MTQsMTUwNzc1OTE5NV19
+eyJoaXN0b3J5IjpbMTA4NzA2MTk5MywxNTA3NzU5MTk1XX0=
 -->
