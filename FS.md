@@ -8,9 +8,10 @@ Los tipos de datos son (G, O, P), haciendo referencia al género del dato (ej: n
 
 ### Enteros
 Los números enteros suelen ocupar una palabra, 4 bytes en ordenadores de 32 bits. El primer bit indica el signo del número (positivo o negativo), y los demás indican la cantidad.
-
+### Palabras
+Una palabra es 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzc1OTE5NV19
+eyJoaXN0b3J5IjpbMTk1ODA2NjA0NywxNTA3NzU5MTk1XX0=
 -->
