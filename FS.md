@@ -14,11 +14,11 @@ Una palabra es la unidad minima de informacion que un determinado procesador pue
 ### Niveles de lenguaje
 - **El lenguaje máquina** es el lenguaje que entiende el ordenador, ya que fue diseñado para eso. El repertorio máquina es el conjunto de órdenes que entiende un ordenador. Cada orden que le llega al procesador tiene una 'llave', llamada código de operación, que identifica el tipo de orden, de manera que el procesador haga una cosa u otra dependiendo de esta llave. Este código de operación viene acompañado con uno o varios operandos, que suelen ser las direcciones en memoria de los datos que se van a usar en la orden. El lenguaje máquina es en binario. 
 - **Ensamblador**, que es algo así como la traducción del lenguaje máquina. Cada código de operación tiene un nombre de instrucción (por ejemplo 11000 = ADD), y las variables tienen guardadas su dirección de memoria en una tabla de símbolos, de manera que se pueda acceder a ellas mediante su nombre y no mediante su dirección de memoria.
-- **El macroensamblador** no es más que un ensamblador enriquecido,d
+- **El macroensamblador** no es más que un ensamblador enriquecido, donde se puede dar un nombre a un conjunto de órdenes de manera que no haya que repetirlas todas cada vez que se quieran ejecutar.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTQ2NTE4NCwtMzk5ODIxMjAsMTA4Nz
+eyJoaXN0b3J5IjpbLTI3OTc5NzY2OSwtMzk5ODIxMjAsMTA4Nz
 A2MTk5MywxNTA3NzU5MTk1XX0=
 -->
