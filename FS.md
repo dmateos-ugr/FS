@@ -8,7 +8,7 @@ Los tipos de datos son (G, O, P), haciendo referencia al género del dato (ej: n
 Estas excepciones se deben a que el tamaño del exponente es demasiado grande, ya sea positivo o negativo.
 
 ### Enteros
-Los números enteros suelen ocupar una palabra, 4 bytes en ordenadores de 32 bits. El primer bit indica el signo del número (positivo o negativo), y los demás indican la cantidad.
+Los números enteros suelen ocupar una palabra, 4 bytes en ordenadores de 32 bits. El primer bit indica el signo del número (positivo o negativo), y los demás indican la cantidad. Esto se podría hacer así, pero la realidad es que 
 ### Palabras
 Una palabra es la unidad minima de informacion que un determinado procesador puede leer o escribir.
 ### Datos
@@ -16,5 +16,6 @@ El lenguaje máquina es el lenguaje que entiende el ordenador. Es el único leng
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NzA2MTk5MywxNTA3NzU5MTk1XX0=
+eyJoaXN0b3J5IjpbMjA4Nzg5MTk1MywxMDg3MDYxOTkzLDE1MD
+c3NTkxOTVdfQ==
 -->
