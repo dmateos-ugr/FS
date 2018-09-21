@@ -17,11 +17,12 @@ Una palabra es la unidad minima de informacion que un determinado procesador pue
 - **El macroensamblador** no es más que un ensamblador enriquecido, donde se puede dar un nombre a un conjunto de órdenes de manera que no haya que repetirlas todas cada vez que se quieran ejecutar.
 - **Los lenguajes de alto nivel**, que intentan parecerse al lenguaje humano eliminando toda ambigüedad. Algunas de las cosas que se incorporan en el salto de ensamblador a estos lenguajes son estructuras de datos, el soporte a más de un operando, estructuras de control, etc.
 
-##
+### Discos duros
+Los discos duros están divididos en secciones. Si el disco fuera un círculo, las secciones son cada una de las circunferencias más pequeñas que hay dentro d
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzA5NDA4MjIsMTcwMzIxMTMzOCwtNT
-c5NzQ2Mjc2LC0yNzk3OTc2NjksLTM5OTgyMTIwLDEwODcwNjE5
-OTMsMTUwNzc1OTE5NV19
+eyJoaXN0b3J5IjpbLTU0NzU3MjMxMywxNzAzMjExMzM4LC01Nz
+k3NDYyNzYsLTI3OTc5NzY2OSwtMzk5ODIxMjAsMTA4NzA2MTk5
+MywxNTA3NzU5MTk1XX0=
 -->
