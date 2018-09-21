@@ -18,11 +18,17 @@ Una palabra es la unidad minima de informacion que un determinado procesador pue
 - **Los lenguajes de alto nivel**, que intentan parecerse al lenguaje humano eliminando toda ambigüedad. Algunas de las cosas que se incorporan en el salto de ensamblador a estos lenguajes son estructuras de datos, el soporte a más de un operando, estructuras de control, etc.
 
 ### Discos duros
-Los discos duros están divididos en secciones. Si el disco fuera un círculo, las secciones son cada una de las circunferencias más pequeñas que hay dentro d
+Los discos duros están divididos en secciones. Si el disco fuera un círculo, las secciones son cada una de las circunferencias más pequeñas que hay dentro de él. Además están divididos en sectores, que es cada una de las partes, como si fuera una pizza. Para leer y escribir datos, el disco necesito una sección y un sector.
+
+### Memoria
+La memoria es como una gran matriz, cuyas celdas están numeradas. Cada una de esas celdas es una palabra.
+
+### Procesador
+Un procesador que tenga por ejemplo 5 bits de código de instrucción, y 20 bits de oper
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NzU3MjMxMywxNzAzMjExMzM4LC01Nz
-k3NDYyNzYsLTI3OTc5NzY2OSwtMzk5ODIxMjAsMTA4NzA2MTk5
-MywxNTA3NzU5MTk1XX0=
+eyJoaXN0b3J5IjpbLTE3MzA3MDM1NjIsMTcwMzIxMTMzOCwtNT
+c5NzQ2Mjc2LC0yNzk3OTc2NjksLTM5OTgyMTIwLDEwODcwNjE5
+OTMsMTUwNzc1OTE5NV19
 -->
