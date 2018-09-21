@@ -27,11 +27,11 @@ La memoria es como una gran matriz, cuyas celdas están numeradas. Cada una de e
 Un procesador que tenga por ejemplo 5 bits de código de instrucción, y 20 bits de operando, puede almacenar un total de 2⁵ instrucciones diferentes, y puede almacenar un total de 2²⁰ operandos.
 
 ### Caché
-La memoria de caché es una memoria especial que está construida de forma diferente y que está pegada al procesador. Es más rápida que la memoria principal, y es 
+La memoria de caché es una memoria especial que está construida de forma diferente y que está pegada al procesador. Es más rápida que la memoria principal, y es donde se guardan los datos a los que más se acceden. Si el procesador quiere acceder a algo, primero comprueba si está en la caché, y si no, comprueba en la memoria principal.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njc5MTkxNzEsMTcwMzIxMTMzOCwtNT
+eyJoaXN0b3J5IjpbLTEwNDI3NTE4OTQsMTcwMzIxMTMzOCwtNT
 c5NzQ2Mjc2LC0yNzk3OTc2NjksLTM5OTgyMTIwLDEwODcwNjE5
 OTMsMTUwNzc1OTE5NV19
 -->
