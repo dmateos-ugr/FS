@@ -18,8 +18,10 @@ Una palabra es la unidad minima de informacion que un determinado procesador pue
 - **Los lenguajes de alto nivel**, que intentan parecerse al lenguaje humano eliminando toda ambigüedad. Algunas de las cosas que se incorporan en el salto de ensamblador a estos lenguajes son estructuras de datos, el soporte a más de un operando, estructuras de control, etc.
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3OTc0NjI3NiwtMjc5Nzk3NjY5LC0zOT
-k4MjEyMCwxMDg3MDYxOTkzLDE1MDc3NTkxOTVdfQ==
+eyJoaXN0b3J5IjpbMTcwMzIxMTMzOCwtNTc5NzQ2Mjc2LC0yNz
+k3OTc2NjksLTM5OTgyMTIwLDEwODcwNjE5OTMsMTUwNzc1OTE5
+NV19
 -->
