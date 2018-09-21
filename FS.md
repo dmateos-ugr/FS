@@ -24,11 +24,11 @@ Los discos duros están divididos en secciones. Si el disco fuera un círculo, l
 La memoria es como una gran matriz, cuyas celdas están numeradas. Cada una de esas celdas es una palabra.
 
 ### Procesador
-Un procesador que tenga por ejemplo 5 bits de código de instrucción, y 20 bits de oper
+Un procesador que tenga por ejemplo 5 bits de código de instrucción, y 20 bits de operando, puede almacenar un total de 2⁵ instrucciones diferentes, y puede almacenar un total de 2²⁰ operandos.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzA3MDM1NjIsMTcwMzIxMTMzOCwtNT
-c5NzQ2Mjc2LC0yNzk3OTc2NjksLTM5OTgyMTIwLDEwODcwNjE5
-OTMsMTUwNzc1OTE5NV19
+eyJoaXN0b3J5IjpbNzMyNzQxNzgzLDE3MDMyMTEzMzgsLTU3OT
+c0NjI3NiwtMjc5Nzk3NjY5LC0zOTk4MjEyMCwxMDg3MDYxOTkz
+LDE1MDc3NTkxOTVdfQ==
 -->
