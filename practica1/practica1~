@@ -1,0 +1,258 @@
+EJER 1.1:
+david@salero-linux-basic ~/Escritorio/UGR/FS $ mkdir ejercicio1
+david@salero-linux-basic ~/Escritorio/UGR/FS $ cd ejercicio1/
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ mkdir Ejer1
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ mkdir Ejer2
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ mkdir Ejer3
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ cd Ejer1
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer1 $ mkdir Ejer21
+
+
+UNA SOLA LINEA:
+david@salero-linux-basic ~/Escritorio/UGR/FS $ mkdir -p ejercicio1/Ejer1/Ejer21 ejercicio1/Ejer2 ejercicio1/Ejer3
+
+a)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer1 $ touch arch100.txt filetags.txt practFS.ext robet201.me
+
+b)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer1 $ cd Ejer21/
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer1/Ejer21 $ touch robet202.me ejer11sol.txt blue.me
+
+c)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer1/Ejer21 $ cd ../../Ejer2
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer2 $ touch ejer2arch.txt ejer2filetags.txt readme2.pdf
+
+d)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ cd Ejer3
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer3 $ touch ejer3arch.txt ejer3filetags.txt readme3.pdf
+
+e)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ touch Ejer1/arch100.txt Ejer1/filetags.txt Ejer1/robet201.me Ejer21/robet202.me Ejer21/ejer11sol.txt Ejer21/blue.me Ejer2/ejer2arch.txt Ejer2/ejer2filetags.txt Ejer2/readme2.pdf Ejer3/ejer3arch.txt Ejer3/ejer3filetags.txt Ejer3/readme3.pdf
+
+
+EJER 1.2:
+a)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ cd Ejer1
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer1 $ mv Ejer21 ../Ejer2/Ejer21
+
+b)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer1 $ cp *.*x* ../Ejer3
+
+c)
+Los archivos en Ejer3 que contengan 'arch'.
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer2 $ ls -la ../Ejer3/*arch*
+-rw-rw-r-- 1 david david 0 sep 20 14:40 ../Ejer3/arch100.txt
+-rw-rw-r-- 1 david david 0 sep 20 14:30 ../Ejer3/ejer3arch.txt
+
+EJERCICIO 1.3:
+ls -p .. | grep -v /
+ls -p .. muestra las carpetas y los archivos del directorio padre añadiendo / a los directorios, la salida se pasa a grep, que muestra solo los resultados que no contengan /, es decir, los archivos.
+
+
+EJERCICIO 2.4:
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer2 $ ls -l
+total 4
+drwxrwxr-x 2 david david 4096 sep 20 14:29 Ejer21
+-rw-rw-r-- 1 david david    0 sep 20 14:31 ejer2arch.txt
+-rw-rw-r-- 1 david david    0 sep 20 14:31 ejer2filetags.txt
+-rw-rw-r-- 1 david david    0 sep 20 14:31 readme2.pdf
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer2 $ touch readme2.pdf 
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1/Ejer2 $ ls -l
+total 4
+drwxrwxr-x 2 david david 4096 sep 20 14:29 Ejer21
+-rw-rw-r-- 1 david david    0 sep 20 14:31 ejer2arch.txt
+-rw-rw-r-- 1 david david    0 sep 20 14:31 ejer2filetags.txt
+-rw-rw-r-- 1 david david    0 sep 21 01:01 readme2.pdf
+
+EJERCICIO 2.5:
+a)
+david@salero-linux-basic ~ $ pwd
+/home/david
+No es el mismo que el de mis compañeros, ya que nuestro usuario es diferente.
+
+b) Ya creado anteriormente.
+
+c)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ cp /etc/hosts .
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ cp /etc/pa
+pam.conf   pam.d/     papersize  passwd     passwd-    
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ cp /etc/passwd .
+
+d)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ cat hosts
+127.0.0.1	localhost
+127.0.1.1	salero-linux-basic
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ cat passwd 
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:102:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:101:103:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:102:104:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+systemd-bus-proxy:x:103:105:systemd Bus Proxy,,,:/run/systemd:/bin/false
+syslog:x:104:108::/home/syslog:/bin/false
+_apt:x:105:65534::/nonexistent:/bin/false
+messagebus:x:106:110::/var/run/dbus:/bin/false
+uuidd:x:107:111::/run/uuidd:/bin/false
+lightdm:x:108:114:Light Display Manager:/var/lib/lightdm:/bin/false
+ntp:x:109:116::/home/ntp:/bin/false
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/bin/false
+avahi:x:111:120:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+colord:x:112:123:colord colour management daemon,,,:/var/lib/colord:/bin/false
+dnsmasq:x:113:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+speech-dispatcher:x:114:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+hplip:x:115:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+kernoops:x:116:65534:Kernel Oops Tracking Daemon,,,:/:/bin/false
+pulse:x:117:124:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+nm-openvpn:x:118:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/bin/false
+rtkit:x:119:127:RealtimeKit,,,:/proc:/bin/false
+saned:x:120:128::/var/lib/saned:/bin/false
+usbmux:x:121:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
+david:x:1000:1000:David,,,:/home/david:/bin/bash
+
+EJERCICIO 1.6:
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ mkdir Sesion.1 Sesion.10 Sesion.2 Sesion.3 Sesion.4 Sesion.27 Prueba.1 Sintaxis.2
+
+a)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ rmdir Sesion.4
+
+b)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ ls Sesion.? -d
+Sesion.1  Sesion.2  Sesion.3
+
+c)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ ls *.1 -d
+Prueba.1  Sesion.1
+
+d)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ ls *.[12] -d
+Prueba.1  Sesion.1  Sesion.2  Sintaxis.2
+
+e)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ ls *si* -d
+Sesion.1  Sesion.10  Sesion.2  Sesion.27  Sesion.3
+
+
+f) El comando sería 'ls *si*.2', pero no he conseguido hacerlo funcionar ni en mi terminal ni en la terminal del aula.
+
+
+EJERCICIO 1.7:
+a)
+david@salero-linux-basic /bin $ ls ????
+bash  cpio  date  grep  kill  less  nano  ping  sync  vdir  zcmp
+chvt  dash  echo  gzip  kmod  more  open  stty  true  zcat  znew
+
+b)
+david@salero-linux-basic /bin $ ls [df]*
+dash  dd  dir    dnsdomainname  dumpkeys  fgconsole  findmnt     fuser
+date  df  dmesg  domainname     false     fgrep      fsck.btrfs  fusermount
+
+c)
+david@salero-linux-basic /bin $ ls {sa,se,ad}*
+ls: no se puede acceder a 'sa*': No existe el archivo o el directorio
+ls: no se puede acceder a 'ad*': No existe el archivo o el directorio
+sed  setfacl  setfont  setupcon
+
+d)
+david@salero-linux-basic /bin $ ls t*r
+tar
+
+EJERCICIO 1.8:
+a)
+david@salero-linux-basic ~ $ ls tem*{.gz,.zip}
+ls: no se puede acceder a 'tem*.gz': No existe el archivo o el directorio
+ls: no se puede acceder a 'tem*.zip': No existe el archivo o el directorio
+
+b)
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ ls tem*{.gz,.zip}
+ls: no se puede acceder a 'tem*.gz': No existe el archivo o el directorio
+ls: no se puede acceder a 'tem*.zip': No existe el archivo o el directorio
+
+c) No hay una gran diferencia ya que ninguno de los dos directorios tiene archivos que cumplan esa condición
+
+EJERCICIO 1.9:
+a)
+david@salero-linux-basic /etc $ head passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+
+b)
+david@salero-linux-basic /etc $ tail -n 5 passwd
+nm-openvpn:x:118:126:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/bin/false
+rtkit:x:119:127:RealtimeKit,,,:/proc:/bin/false
+saned:x:120:128::/var/lib/saned:/bin/false
+usbmux:x:121:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
+david:x:1000:1000:David,,,:/home/david:/bin/bash
+
+EJERCICIO 1.10:
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ sort file
+1
+2
+3
+4
+5
+6
+a
+b
+c
+d
+e
+
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ sort file -r
+e
+d
+c
+b
+a
+6
+5
+4
+3
+2
+1
+
+david@salero-linux-basic ~/Escritorio/UGR/FS/ejercicio1 $ sort file -R
+c
+5
+d
+2
+a
+e
+b
+6
+3
+4
+1
+
+EJERCICIO 1.11:
+ls *{.txt,.c}
