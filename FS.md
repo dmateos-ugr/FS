@@ -29,6 +29,11 @@ Un procesador que tenga por ejemplo 5 bits de código de instrucción, y 20 bits
 ### Caché
 La memoria de caché es una memoria especial que está construida de forma diferente y que está pegada al procesador. Es más rápida que la memoria principal, y es donde se guardan los datos a los que más se acceden. Si el procesador quiere acceder a algo, primero comprueba si está en la caché, y si no, comprueba en la memoria principal.
 
+### Lectura de datos
+Cada vez que la CPU tiene que leer un dato del disco duro, se lo dice al módulo DMA (Direct Memory Acess), que coge los datos del disco y los guarda en memoria. Ya que los dispositivos de entrada y salida son más lentos que la CPU, mientras se recogen datos del disco, el programa que se estaba ejecutando se guarda, y se comienza a ejecutar otro programa para que la CPU no esté parada. Cuando lleguen los datos, se vuelve con la ejecución del programa que está en pausa.
+Sin embargo, cuando se leen datos del disco duro, en vez de leer un solo dato, se suele traer el sector entero por si se usa en un futuro. De esa manera se minimizan los usos de E/S, cuya velocidad es bastante inferior a la de la CPU.
+Lo que aloja la información respectiva a las interrupciones son **creo** los vectores de interrupciones o algo asi
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEwNDI3NTE4OTQsMTcwMzIxMTMzOCwtNT
