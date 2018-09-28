@@ -1,0 +1,97 @@
+EJERCICIO 2.1:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ chmod o+x test
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ ls -l
+total 0
+-rw-r--r-x 1 david david 0 sep 27 00:24 test
+
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ chmod g+rx test
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ ls -l
+total 0
+-rw-r-xr-x 1 david david 0 sep 27 00:24 test
+
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ chmod go-r test
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ ls -l
+total 0
+-rw---x--x 1 david david 0 sep 27 00:28 test
+
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ chmod u+x,o+r test
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ ls -l
+total 0
+-rwx--xr-x 1 david david 0 sep 27 00:28 test
+
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ ls -l
+total 0
+-rw-r-xr-- 1 david david 0 sep 27 00:31 e234
+-rw-r-xr-- 1 david david 0 sep 27 00:31 e567
+-rwx--xr-x 1 david david 0 sep 27 00:28 test
+
+
+EJERCICIO 2.2:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ ls .. > ej31
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ cat ej31
+FS.md
+practica1
+practica2
+practica2u
+README.md
+
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ tail -2 ej31 > ej32
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ cat ej32
+practica2u
+README.md
+
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ cat ej31 >> ej32
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ cat ej32
+practica2u
+README.md
+FS.md
+practica1
+practica2
+practica2u
+README.md
+david@salero
+
+
+EJERCICIO 2.3:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ ls -l /etc | tail -6
+-rw-r--r--  1 root root    4942 may  8 19:02 wgetrc
+drwxr-xr-x  2 root root    4096 sep 10 00:35 wireshark
+drwxr-xr-x  2 root root    4096 sep  9 23:13 wpa_supplicant
+drwxr-xr-x 11 root root    4096 sep  9 23:14 X11
+drwxr-xr-x  5 root root    4096 jul 25 05:06 xdg
+-rw-r--r--  1 root root     477 mar 16  2018 zsh_command_not_found
+
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ wc -m [e,f]*
+  6 e234
+  9 e567
+ 47 ej31
+ 68 ej32
+130 total
+
+
+EJERCICIO 2.4:
+a)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ man chmod
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ man chmod | tail -17 > ejercicio1
+
+b)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ pwd >> ejercicio1 
+
+c)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ (who && ls) > ejercicio3
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ cat ejercicio3
+david    :0           2018-09-26 21:00 (:0)
+e234
+e567
+ej31
+ej32
+ejercicio1
+ejercicio3
+test
+
+d)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ wc ejercicio1 &>> ejercicio3
+
+e)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica2$ chmod g-r,a+x ejercicio?
+
