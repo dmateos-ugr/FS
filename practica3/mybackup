@@ -1,0 +1,14 @@
+#!/bin/bash
+# Título:       mybackup
+# Fecha:        04/10/2017
+# Autor:        David Mateos Romero
+# Versión:      1.0
+# Descripción:  Realiza una copia de seguridad de los archivos del usuario
+#               en un directorio dado como argumento.
+# Opciones:     Ninguna
+# Uso:          mybackup destino
+
+printf "Haciendo copia de seguridad de $HOME...\n"
+mkdir $1
+cp -r $HOME/* $1
+printf "Copia realizada\n"

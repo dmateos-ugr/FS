@@ -1,0 +1,75 @@
+EJERCICIO 3.1:
+GDMSESSION=ubuntu
+LOGNAME=david
+SHELL=/bin/bash
+HOME=/home/david
+LANG=es_ES.UTF-8
+
+EJERCICIO 3.2:
+Bastaría con ejecutar export $NOMBRE después de declararla.
+
+EJERCICIO 3.3: 
+Si se ponen las comillas dobles despues de los dos puntos se escribe todo en una linea.
+Si se sustituyen las comillas dobles por comillas simples lo interpreta como si fuera todo una cadena e ignora la orden.
+
+EJERCICIO 4.4:
+La variable numero no existe, es decir, está vacía. Por ello al obtener su contenido no obtiene nada, y se guarda en la variable solo el '+
+
+EJERCICIO 3.5:
+localizado en archivo 'ejercicio3.5'
+
+EJERCICIO 3.6:
+localizado en archivo 'ejercicio3.6'
+
+EJERCICIO 3.7:
+a)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ VAR1=hola
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ VAR2=adios
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ VAR3=14
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ printf "%-15s %-15s %-15d\n" $VAR1 $VAR2 $VAR3
+hola            adios           14 
+
+b) Son variables locales, ya que las defino dentro del script.
+
+c)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ unset VAR2
+
+d) No puede, ya que eran variables locales.
+
+e)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ vector=($VAR1 $VAR3)
+
+f)
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ printf "%d\n" ${vector[1]}
+14
+
+EJERCICIO 3.8:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ alias ne="ls | wc -l"
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ ne
+7
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ alias ne_home="ls $HOME | wc -l"
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ ne_home 
+13
+
+EJERCICIO 3.9:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ find $HOME -size -1
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ find $HOME -size -1 > archivosP
+
+EJERCICIO 3.10:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ ls *ejemplo*
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ find *ejemplo*
+
+EJERCICIO 3.12:
+Lo ideal sería utilizando expresiones y órdenes que aún no hemos dado (por ejemplo if y cut).
+Utilizando lo que hemos aprendido podríamos:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ usuario=david
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ cat /etc/passwd | grep $usuario
+david:x:1000:1000:david,,,:/home/david:/bin/bash
+Si nos sale coincidencias, como es el caso, existe una cuenta con el nombre que hayamos especificado.
+
+EJERCICIO 3.13:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica3$ ls -lR $HOME | cut -b 8 | grep '-' | wc -l
+Listo todos los ficheros recursivamente en $HOME. Luego, con cut, en cada linea cojo solo el byte 8 (correspondiente al valor 'r' o '-' dependiendo de si los demás usuarios pueden leer el archivo o no). Finalmente, con grep filtro los que tengan '-', y con wc los cuento.
+
+EJERCICIO 3.14:
+localizado en archivo 'numE'
