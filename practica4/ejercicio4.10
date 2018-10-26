@@ -1,0 +1,15 @@
+#!/bin/bash
+es_plano=`test  -f  $1  &&  test  -x  $1  &&  echo  true  ||  echo  false`
+es_enlace=`test  -h  $1  &&  echo  true  ||  echo  false`
+echo  "El  parametro  pasado:  "
+if  [  $es_plano  ==  "true"  ]
+then
+#Dado  el  enunciado  aqui  no  contemplamos  el  caso  de  que  solo  sea
+#verdad  una  de  estas  condiciones
+echo  "Es  un  archivo  plano  y  con  permiso  de  ejecucion"
+else
+echo  "No  es  un  archivo  plano  y  no  tiene  permiso  de  ejecucion"fi
+if  [  $es_enlace  ==  "true"  ]
+then
+echo  "Es  un  enlace  simbolico"elseecho  "No  es  un  enlace  simbolico"
+fi

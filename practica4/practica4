@@ -1,0 +1,133 @@
+EJERCICIO 4.1:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ anio=365
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ dia=`date  +%j`
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ var=`expr  $anio  -$dia`
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo  “Faltan  $((  ($anio  -$dia)  /  7  ))  semanas  hasta  el  fin  de  año”
+
+EJERCICIO 4.2:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ v=1
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $v
+1
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $((v++))
+1
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $v
+2
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $((++v))
+3
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $v
+
+Podemos ver que cuando hago 'echo $((v++))', primero imprime el contenido de la variable y luego la incrementa, mientras que cuando hago 'echo $((++v))' primero incrementa la variable y luego la imprime.
+
+EJERCICIO 4.3:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ n=10
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $((n/=5))
+2
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $n
+2
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ n=10
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $((n=n/5))
+2
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $n
+2
+
+EJERCICIO 4.4:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo 6/5 | bc -l
+1.20000000000000000000
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo "6/5 | bc -l"
+6/5 | bc -l
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo '6/5 | bc -l'
+6/5 | bc -l
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo "6/5" | bc -l
+1.20000000000000000000
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo '6/5' | bc -l
+1.20000000000000000000
+
+Podemos ver que si acoto todo lo que sigue a la orden echo, lo interpreta como la cadena de caracteres a imprimir. Sin embargo, si acoto solo 6/5 sigue funcionando, ya que 6/5 es una cadena de caracteres.
+
+EJERCICIO 4.5:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo (3-2)/5 | bc -l
+bash: error sintáctico cerca del elemento inesperado `3-2'
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo "(3-2)/5" | bc -l
+.20000000000000000000
+
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo "(3-2)/5" | bc -l
+.20000000000000000000
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo '(3-2)/5' | bc -l
+.20000000000000000000
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo `(3-2)/5` | bc -l
+bash: command substitution: línea 1: error sintáctico cerca del elemento inesperado `/5'
+bash: command substitution: línea 1: `(3-2)/5'
+
+Los apóstrofes inversos dan error porque bash intenta evaluar y ejecutar (3-2)/5, igual que si se introduciera $( (3-2)/5 ).
+
+EJERCICIO 4.7: 
+Asignacion multiple:
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ let a=5+5 b=5+6
+david@salero-ubuntu:~/Escritorio/UGR/FS/practica4$ echo $a $b
+10 11
+
+EJERCICIO 4.8:
+ejemplo1
+no
+
+ejemplo2
+no
+5
+
+ejemplo3
+practica4   (resultado de ls)
+si
+
+ejemplor4
+no
+6
+
+ejemplo5
+no
+5
+
+ejemplo6
+practica4
+si
+5
+
+ejemplo7
+0
+0
+
+ejemplo8
+1
+
+ejemplo9
+3 no es mayor que 5
+
+EJERCICIOS 4.9 Y 4.10:
+en sus respectivos archivos
+
+EJERCICIO 4.12:
+a)
+Verifica  si  el  archivo "sesion5.pdf" del  directorio  actual  es  un  archivo  plano,  si  es  así    imprime  que  el  archivo  existe
+
+b)
+if  test  -f ./sesion5.pdf ;  then  printf  "El  archivo ./sesion5.pdf existe\n";  else  printf  "No  existe";  fi
+
+c)
+if  test  -f ./sesion5.pdf &&  test  -d  /bin  ;  then  printf  "El  archivo ./sesion5.pdf existe  y  /bin  es  un  directorio";  elif  test  -f ./sesion5.pdf &&  !  test  -d  /bin  ;  then  printf  "El  archivo ./sesion5.pdf existe  y  /bin  no  es  un  directorio";  elif  !  test  -f ./sesion5.pdf &&  test  -d  /bin  ;  then  printf  "No  existe  el  archivo  ./sesion5.pdf y  /bin  es  un  directorio";else  printf  "Ni  existe ./sesion5.pdf ni  /bin  es  un  directorio";  fi
+
+d)
+#!/bin/bashif  test  -f  $1  &&  test  -d  $2then  printf  "El  archivo  $1  existe  y  $2  es  un  directorio\n"elif  test  -f  $1  &&  !  test  -d  $2then  printf  "El  archivo  $1  existe  y  $2  no  es  un  directorio\n"elif  !  test  -f  $1  &&  test  -d  $2then  printf  "No  existe  el  archivo  $1  y  $2  es  un  directorio\n"elseprintf  "Ni  existe  $1  ni  $2  es  un  directorio\n"fi
+
+EJERCICIOS 4.13 Y 4.14:
+en sus respectivo archivos
+
+EJERCICIO 4.15:
+Si se  borra  la  redirección  pasa  que  el  mensaje  de  error  que  emite  el  sistema  operativo  ,  por  ejemplo  si  el  archivo  no  existe,  se  muestra  en  pantalla  además  de  nuestro  mensaje.  Si  no  lo  eliminamos  no  se  muestra,  ya  que  se  envía  a  /dev/null.
+
+EJERCICIO 4.16:
+en su respectivo archivo
+
+EJERCICIO 4.17:
+find  /  -regex  '.*\([0-9]+.*e\).*'find  .  -regex  '.*e.*'  -and  -not  -regex  '.*[01].*'
+
+EJERCICIO 4.18:
+grep  –c

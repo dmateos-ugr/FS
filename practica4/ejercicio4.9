@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo Parámetros: $1 $2
+
+if [ $1 == $2 ];
+then echo Los dos parámetros son iguales.;
+fi
+
+if (( $1 > $2 ));
+then echo El primer parámetro es mayor.;
+fi
+
+if (( $1 < $2 ));
+then echo El segundo parámetro es mayor.;
+fi

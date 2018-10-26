@@ -1,0 +1,15 @@
+#!/bin/bash
+propietario=`ls  -lF  /bin/ls|cut  -d  "  "  -f  3`
+lectura=`ls  -lF  /bin/ls|grep  -e  '^.r'|wc  -l`
+if  [  $lectura  -eq  1  ]
+then
+printf  "El  usuario  tiene  permiso  de  lectura\n"
+else
+printf  "El  usuario  NO  tiene  permiso  de  lectura\n"
+fi
+if  [  $1  ==  $propietario  ]
+then
+printf  "El  usuario  es  propietario  de  /bin/ls\n"
+else
+printf  "El  usuario  NO  es  propietario  de  /bin/ls\n"
+fi
