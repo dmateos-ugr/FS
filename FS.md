@@ -89,7 +89,7 @@ Se comienza en el símbolo inicial, se continúa con símbolos no terminales y d
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDI3NTE4OTQsMTcwMzIxMTMzOCwtNT
-c5NzQ2Mjc2LC0yNzk3OTc2NjksLTM5OTgyMTIwLDEwODcwNjE5
-OTMsMTUwNzc1OTE5NV19
+eyJoaXN0b3J5IjpbMTkxODk2Njc2MSwtMTA0Mjc1MTg5NCwxNz
+AzMjExMzM4LC01Nzk3NDYyNzYsLTI3OTc5NzY2OSwtMzk5ODIx
+MjAsMTA4NzA2MTk5MywxNTA3NzU5MTk1XX0=
 -->
