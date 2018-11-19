@@ -50,6 +50,12 @@ Que sea una dirección lógica significa que empieza por 0. Veamos en qué pági
 5400/1024 = 5.27 Esto quiere decir que se encuentra en la sexta página, que es realmente la página 5. El marco es el 0.
 El resto de esta división 280, por lo que la dirección física = número de marco * tamaño página + desplazamiento = 0 * 1024 + 280 = 280
 
+# Definiciones temas 1 y 2
+- **Instrucción**: conjunto de símbolos insertados en una secuencia estructurada que el procesador interpreta y ejecuta.
+- **Dato**: símbolos que representan hechos, valores, condiciones... Son elementos de información.
+- **Firmware**: es un bloque de intrucciones de máquina que están en una memoria, que suele ser de lectura/escritura, que establece la lógica de más bajo nivel que controla los circuitos electrónicos de un dispositivo.
+- **Software**: conjunto de 
+
 # Tema 3
  
 ## Programas que intervienen en la creación de un programa.
@@ -89,7 +95,7 @@ Se comienza en el símbolo inicial, se continúa con símbolos no terminales y d
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxODk2Njc2MSwtMTA0Mjc1MTg5NCwxNz
-AzMjExMzM4LC01Nzk3NDYyNzYsLTI3OTc5NzY2OSwtMzk5ODIx
-MjAsMTA4NzA2MTk5MywxNTA3NzU5MTk1XX0=
+eyJoaXN0b3J5IjpbMTQxOTg0NzAsLTEwNDI3NTE4OTQsMTcwMz
+IxMTMzOCwtNTc5NzQ2Mjc2LC0yNzk3OTc2NjksLTM5OTgyMTIw
+LDEwODcwNjE5OTMsMTUwNzc1OTE5NV19
 -->
