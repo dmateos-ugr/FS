@@ -1,0 +1,26 @@
+EJERCICIO 6.1:
+El error introducido ha sido quitar el espacio inicial que había en el if dentro de los corchetes correspondientes al test. Para corregirlo sería suficiente volver a añadir dicho espacio.
+
+EJERCICIO 6.3:
+ps -e -o comm,size | sort -r -n -k 2 | head -n 1 | cut -d " " -f 1
+
+EJERCICIO 6.4:
+El script será simplemente:
+
+while true
+do
+	echo "$i "
+	sleep 1
+	i=$((i+1))
+done
+
+Hay que buscar el PID del proceso con ps, y luego:
+Para detener la ejecucion: kill -STOP PID
+Para reaunidad: kill -CONT PID
+Para terminar: kill -TERM PID
+
+EJERCICIO 6.5:
+Sí: kill -9 PID.
+
+EJERCICIO 6.6:
+top -u $USER
